@@ -1,0 +1,495 @@
+/* ================================================================= *
+ * RRU - Holographic Signs & Fire Gem Component Stylesheet           *
+ * ================================================================= */
+
+/* --- Holographic Sign / Card Styling --- */
+.rru-hologram-sign {
+    background: linear-gradient(135deg, rgba(5, 10, 25, 0.88) 0%, rgba(2, 4, 12, 0.95) 100%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(0, 242, 255, 0.45);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.9), 
+        0 0 20px rgba(0, 242, 255, 0.25),
+        inset 0 0 15px rgba(0, 242, 255, 0.1);
+    border-radius: 12px;
+    color: #00f2ff;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scanline Overlay FX for Signs */
+.rru-hologram-sign::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 242, 255, 0.07) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Hologram Header & Text Glow */
+.rru-sign-header {
+    border-bottom: 1px solid rgba(0, 242, 255, 0.25);
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.6);
+}
+
+.rru-sign-text {
+    color: #cbd5e1;
+    text-shadow: 0 0 4px rgba(0, 242, 255, 0.3);
+}
+
+
+/* --- Fire Gem Obsidian & Flame Glow Theme --- */
+.rru-fire-gem-badge {
+    background: linear-gradient(135deg, rgba(255, 60, 0, 0.2) 0%, rgba(10, 5, 2, 0.95) 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 170, 0, 0.5);
+    box-shadow: 
+        0 10px 35px rgba(0, 0, 0, 0.95), 
+        0 0 25px rgba(255, 80, 0, 0.35),
+        inset 0 0 15px rgba(255, 215, 0, 0.2);
+    border-radius: 12px;
+    color: #ffd700;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Internal Ember Core Pulse Animation */
+.rru-fire-gem-core {
+    background: radial-gradient(circle, rgba(255, 120, 0, 0.4) 0%, rgba(255, 30, 0, 0.1) 70%, transparent 100%);
+    box-shadow: inset 0 0 20px rgba(255, 170, 0, 0.5);
+    animation: firePulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes firePulse {
+    0% {
+        box-shadow: inset 0 0 15px rgba(255, 120, 0, 0.3), 0 0 10px rgba(255, 50, 0, 0.2);
+        border-color: rgba(255, 170, 0, 0.4);
+    }
+    100% {
+        box-shadow: inset 0 0 30px rgba(255, 215, 0, 0.6), 0 0 25px rgba(255, 100, 0, 0.6);
+        border-color: rgba(255, 215, 0, 0.8);
+    }
+}
+
+/* ================================================================= *
+ * RRU - Holographic Sign Panel Stylesheet (sign.css)                *
+ * ================================================================= */
+
+.hologram-panel {
+    position: relative;
+    background: linear-gradient(135deg, rgba(0, 242, 255, 0.08), rgba(0, 15, 30, 0.85));
+    border: 1px solid rgba(0, 242, 255, 0.4);
+    box-shadow: 0 0 25px rgba(0, 242, 255, 0.25), inset 0 0 15px rgba(0, 242, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+}
+
+/* Sci-Fi Corner Brackets */
+.hologram-panel::before,
+.hologram-panel::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-color: #00f2ff;
+    border-style: solid;
+    pointer-events: none;
+}
+
+.hologram-panel::before {
+    top: -2px;
+    left: -2px;
+    border-width: 2px 0 0 2px;
+}
+
+.hologram-panel::after {
+    bottom: -2px;
+    right: -2px;
+    border-width: 0 2px 2px 0;
+}
+
+.hologram-panel label {
+    color: #00f2ff !important;
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.6);
+    letter-spacing: 1.5px;
+}
+
+.hologram-panel select, 
+.hologram-panel button,
+.hologram-panel input {
+    background: rgba(0, 242, 255, 0.05);
+    border: 1px solid rgba(0, 242, 255, 0.5);
+    color: #c0f0ff;
+    transition: all 0.3s ease;
+}
+
+.hologram-panel select:hover, 
+.hologram-panel button:hover,
+.hologram-panel input:focus {
+    background: rgba(0, 242, 255, 0.2);
+    border-color: #00f2ff;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.6);
+    color: #ffffff;
+}
+
+/* Electric Border Pulse Animation on Panels */
+@keyframes borderElectricPulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 242, 255, 0.2), inset 0 0 10px rgba(0, 242, 255, 0.1);
+        border-color: rgba(0, 242, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(0, 242, 255, 0.5), inset 0 0 20px rgba(0, 242, 255, 0.3);
+        border-color: rgba(0, 242, 255, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 242, 255, 0.2), inset 0 0 10px rgba(0, 242, 255, 0.1);
+        border-color: rgba(0, 242, 255, 0.4);
+    }
+}
+
+.hologram-panel-active {
+    animation: borderElectricPulse 3s infinite ease-in-out;
+}
+
+/* ================================================================= *
+ * RRU - Cinematic Holographic Sign HUD CSS Patch                    *
+ * ================================================================= */
+
+.glass-panel.atom-sign-card {
+    background: rgba(2, 8, 16, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 242, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.6),
+        inset 0 0 15px rgba(0, 242, 255, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel.atom-sign-card:hover {
+    border-color: rgba(0, 242, 255, 0.6);
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.8), 
+        inset 0 0 20px rgba(0, 242, 255, 0.12);
+}
+
+/* Soft pulse keyframes for UI status indicators */
+@keyframes rruGlowPulse {
+    0% { opacity: 0.6; box-shadow: 0 0 4px #00f2ff; }
+    50% { opacity: 1.0; box-shadow: 0 0 10px #00f2ff; }
+    100% { opacity: 0.6; box-shadow: 0 0 4px #00f2ff; }
+}
+
+.node-status-indicator {
+    animation: rruGlowPulse 3s infinite ease-in-out;
+}
+
+/* ==========================================================================
+   AVIS-2026 / RRU TACTICAL HUD & KERNEL STYLESHEET (Fully Transparent, No Blur)
+   Operator: CVBGOD
+   ========================================================================== */
+
+:root {
+    --bg-deep: #000a14;
+    --panel-bg: rgba(0, 4, 8, 0.45);
+    --neon-cyan: #00f2ff;
+    --neon-gold: #ffd700;
+    --neon-blue: #0088ff;
+    --alert-red: #ff4444;
+    --border-glow: rgba(0, 242, 255, 0.4);
+    --border-hover: rgba(0, 242, 255, 0.8);
+    --text-main: #cbd5e1;
+    --text-dim: #64748b;
+    --console-bg: rgba(0, 2, 5, 0.55);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--bg-deep);
+    background-image: url('nbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-main);
+}
+
+#webgl-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: grab;
+}
+
+#webgl-container:active {
+    cursor: grabbing;
+}
+
+/* HUD / UI Overlay Layer */
+#hud-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 320px;
+    max-height: calc(100vh - 40px);
+    background: rgba(0, 4, 8, 0.45) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid var(--border-glow) !important;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+    color: #f1f5f9;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.interactive {
+    pointer-events: auto;
+}
+
+#hud-overlay header {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: rgba(0, 2, 5, 0.35) !important;
+    border-bottom: 1px solid rgba(0, 242, 255, 0.2) !important;
+    padding: 10px 14px;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    flex-shrink: 0;
+}
+
+#hud-overlay header h1 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 6px rgba(0, 242, 255, 0.4);
+}
+
+#hud-overlay #status-bar {
+    font-size: 8.5px;
+    color: var(--neon-gold);
+    letter-spacing: 0.8px;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+    background: rgba(255, 215, 0, 0.03);
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+#hud-overlay .control-panel {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+#hud-overlay .control-panel::-webkit-scrollbar {
+    width: 4px;
+}
+
+#hud-overlay .control-panel::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#hud-overlay .control-panel::-webkit-scrollbar-thumb {
+    background: rgba(0, 242, 255, 0.3);
+    border-radius: 10px;
+}
+
+#hud-overlay .control-panel::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 242, 255, 0.8);
+}
+
+#hud-overlay .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 0;
+}
+
+#hud-overlay .control-group label {
+    font-size: 9.5px;
+    color: var(--neon-cyan);
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+#hud-overlay select,
+#hud-overlay input[type="text"] {
+    background: rgba(0, 2, 5, 0.6) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid var(--border-glow) !important;
+    color: var(--neon-cyan) !important;
+    border-radius: 3px;
+    padding: 5px 7px;
+    font-family: inherit;
+    font-size: 9.5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#hud-overlay select:focus,
+#hud-overlay input[type="text"]:focus {
+    outline: none;
+    border-color: var(--border-hover) !important;
+    background: rgba(0, 4, 8, 0.85) !important;
+    box-shadow: 0 0 8px rgba(0, 242, 255, 0.3);
+}
+
+#hud-overlay button {
+    background: rgba(0, 2, 5, 0.5);
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid var(--border-glow);
+    border-radius: 20px;
+    color: var(--neon-cyan);
+    font-family: inherit;
+    font-size: 9.5px;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#hud-overlay button:hover {
+    background: rgba(0, 242, 255, 0.15);
+    border-color: var(--border-hover);
+    color: var(--neon-cyan);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+#hud-overlay #toggle-deploy-btn {
+    border-color: rgba(0, 136, 255, 0.6);
+    color: var(--neon-blue);
+}
+
+#hud-overlay #toggle-deploy-btn:hover {
+    background: rgba(0, 136, 255, 0.2);
+    border-color: var(--neon-cyan);
+    color: var(--neon-cyan);
+}
+
+#hud-overlay .instructions {
+    margin-top: 2px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(0, 242, 255, 0.2);
+    font-size: 8.5px;
+    color: var(--text-dim);
+    line-height: 1.4;
+    flex-shrink: 0;
+    border-left: none;
+    padding-left: 0;
+}
+
+#hud-overlay .instructions b {
+    color: var(--neon-cyan);
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   AVIS-2026 / RRU OBJECT TRACKER PANEL STYLESHEET (Transparent, No Blur)
+   ========================================================================== */
+
+#rru-tracker-panel {
+    background: rgba(0, 4, 8, 0.45) !important;
+    border: 1px solid rgba(0, 242, 255, 0.35) !important;
+    border-radius: 6px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #cbd5e1 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6) !important;
+}
+
+#rru-tracker-panel .rru-window-header, 
+#rru-tracker-panel header,
+#rru-tracker-panel .tracker-header {
+    background: rgba(0, 2, 5, 0.35) !important;
+    border-bottom: 1px solid rgba(0, 242, 255, 0.3) !important;
+    color: #00f2ff !important;
+    font-weight: bold !important;
+    letter-spacing: 1.5px !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+#tracker-node-list {
+    background: rgba(0, 2, 5, 0.5) !important;
+    border: 1px solid rgba(0, 242, 255, 0.15) !important;
+    border-radius: 4px !important;
+    padding: 6px !important;
+}
+
+#tracker-node-list .glass-panel {
+    background: rgba(0, 4, 8, 0.45) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(0, 242, 255, 0.25) !important;
+    border-radius: 5px !important;
+}
+
+#tracker-node-list input[type="text"],
+#tracker-node-list select {
+    background: rgba(0, 2, 5, 0.65) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(0, 242, 255, 0.3) !important;
+    color: #00f2ff !important;
+}
+
+/* AVIS Monitor Card Window Style (Fully Transparent, Dark & Clean, No Blur) */
+.avis-card-window {
+    background-color: rgba(0, 4, 8, 0.45);
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid #00F2FF;
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 242, 255, 0.2);
+    color: #00F2FF;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.avis-card-window .card-header {
+    border-bottom: 1px solid rgba(0, 242, 255, 0.4);
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    background: rgba(0, 2, 5, 0.35);
+}

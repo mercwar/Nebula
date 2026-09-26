@@ -1,0 +1,40 @@
+.rru-dev-panel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 340px;
+    background: rgba(5, 10, 20, 0.95);
+    border: 1px solid #00f2ff;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+    color: #00f2ff;
+    font-family: 'Courier New', monospace;
+    z-index: 9999;
+    backdrop-filter: blur(6px);
+    border-radius: 4px;
+}
+.rru-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #00f2ff33;
+    background: rgba(0, 242, 255, 0.1);
+}
+.rru-panel-header h3 { margin: 0; font-size: 14px; letter-spacing: 1px; }
+.rru-btn-close { background: none; border: none; color: #00f2ff; font-size: 20px; cursor: pointer; }
+.rru-panel-body { padding: 15px; max-height: 80vh; overflow-y: auto; }
+.rru-field-group { margin-bottom: 12px; }
+.rru-field-group label { display: block; font-size: 11px; margin-bottom: 4px; text-transform: uppercase; }
+.rru-field-group input[type="text"], .rru-field-group textarea {
+    width: 100%; background: #000; border: 1px solid #00f2ff66; color: #fff; padding: 6px; font-family: monospace; box-sizing: border-box;
+}
+.rru-field-group input[type="range"] { width: 100%; accent-color: #00f2ff; }
+.rru-btn-row, .rru-spawn-buttons, .rru-cookie-section { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.rru-btn { background: rgba(0, 242, 255, 0.15); border: 1px solid #00f2ff; color: #00f2ff; padding: 6px 12px; cursor: pointer; font-family: monospace; font-size: 11px; flex: 1; text-align: center; }
+.rru-btn:hover { background: rgba(0, 242, 255, 0.3); }
+.rru-btn.danger { border-color: #ff3300; color: #ff3300; background: rgba(255, 51, 0, 0.15); }
+.rru-btn.danger:hover { background: rgba(255, 51, 0, 0.3); }
+.rru-toolbar-section, .rru-cookie-section { border-top: 1px dashed #00f2ff44; margin-top: 15px; padding-top: 12px; }
+.rru-toolbar-section h4, .rru-cookie-section h4 { margin: 0 0 8px 0; font-size: 12px; }
+.spawn-btn { background: #001122; border: 1px solid #00f2ff; color: #00f2ff; padding: 6px; cursor: pointer; font-size: 11px; flex: 1; text-align: center; }
+.spawn-btn:hover { background: #002244; }
