@@ -38,8 +38,8 @@ Nebula transforms interconnected pages, maps, portals, keycodes, and discoveries
 Nebula extends the Stargate and Quasar systems with a new layer of exploration and interaction.
 <a target="_self" title="CLICK HERE TO ENTER THE MERCWAR GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
-    src="https://github.com/mercwar/Nebula/blob/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2002_24_03%20PM.png" 
-    alt="Nebula — Expansion for Stargate and Quasar" 
+    src="https://github.com/mercwar/Nebula/blob/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2002_27_44%20PM.png" 
+    alt="Nebula — Quasar Expansion" 
     style="width:100%; height:auto;"
 />
 </a>
@@ -61,13 +61,15 @@ Nebula is not simply another webpage.
 **It is an expansion layer for the worlds connected through Stargate and Quasar.**
 
 ---
+
 <a target="_self" title="CLICK HERE TO ENTER THE MERCWAR GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
-    src="https://github.com/mercwar/Nebula/blob/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2002_27_44%20PM.png" 
-    alt="Nebula — Quasar Expansion" 
+    src="https://github.com/mercwar/Nebula/blob/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2002_24_03%20PM.png" 
+    alt="Nebula — Expansion for Stargate and Quasar" 
     style="width:100%; height:auto;"
 />
 </a>
+
 # 🌀 STARGATE + NEBULA
 
 Nebula expands the Stargate system by turning connected destinations into navigable worlds.
