@@ -8,7 +8,7 @@
 </a>
 
 
-# 🌌 NEBULA OS // STAR-MAP ENGINE
+# 🌌 NEBULA STAR-MAP ENGINE
 
 ══════════════════════════════════════════════════════════════
 
