@@ -1,99 +1,88 @@
-
-<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<a target="_self" title="CLICK HERE TO ENTER THE MERCWAR GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
     src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
-    alt="Mercwar Constellation" 
+    alt="Mercwar Constellation Gateway" 
     style="width:100%; height:auto;"
 />
 </a>
 
 
-# 🌌 NEBULA STAR-MAP ENGINE
 
-══════════════════════════════════════════════════════════════
 
-**ECOSYSTEM:** Robo Rook Universe (RRU) / AVIS Datalake  
-**STATUS:** Protocol Offline • Deployment Pending
 
-══════════════════════════════════════════════════════════════
+# 🌌 NEBULA
+## Expansion for Stargate and Quasar
 
-**[cron.iblogger.org/Nebula/](https://cron.iblogger.org/Nebula/)**
+<a target="_self" title="CLICK HERE TO ENTER THE MERCWAR GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="https://github.com/mercwar/Nebula/blob/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2002_25_29%20PM.png" 
+    alt="Nebula — Humans, Robots and Cyborgs" 
+    style="width:100%; height:auto;"
+/>
+</a>
 
-## SYSTEM STATUS: COMING SOON
+**MERCWAR SYSTEMS • NEBULA MATRIX • STARGATE • QUASAR**
 
-The **Nebula Matrix Telemetry Interface**, **Stellar Raycaster**, and **Node Inspector Suite** are currently undergoing final diagnostic calibration within the Robo Rook Universe development pipeline.
+> **Explore. Connect. Discover. Build.**
 
-Upon deployment, Nebula OS will provide advanced navigation, visualization, telemetry inspection, and AVIS-DL integration capabilities.
+Nebula is a next-generation expansion system for the **Mercwar Stargate** and **Quasar** environments.
 
----
-
-## 🚀 Upcoming Architecture Features
-
-### 🌠 Interactive 3D Star-Map Viewport
-Real-time Three.js constellation rendering featuring:
-
-- Dynamic node selection
-- Precision raycasting
-- Spatial navigation controls
-- Live star-network visualization
-
-### 📡 AVIS Secure Document Repository
-`window.rruMonitor`
-
-Centralized access to:
-
-- Telemetry feeds
-- Classification records
-- Asset metadata
-- External reference linking
-- Datalake synchronization logs
-
-### 🎛 Dev Inspector & Property Controller
-`window.rruManifestWindow`
-
-Real-time development controls including:
-
-- Node scale adjustment
-- Inner hue controls
-- Outer hue controls
-- Brightness multipliers
-- Rotation matrices
-- Visual property inspection
-
-### 💾 AVIS-DL Synchronization Layer
-
-Secure protocol handlers supporting:
-
-- Metadata archiving
-- Repository commits
-- Asset registration
-- Datalake synchronization
-- Classification preservation
-
----
-
-## DEVELOPMENT STATUS
-
-| Module | Status |
-|----------|----------|
-| Nebula Matrix | 🔧 Calibration |
-| Star-Map Engine | 🔧 Calibration |
-| Raycaster System | 🔧 Calibration |
-| AVIS Repository | 🔧 Calibration |
-| Inspector Tools | 🔧 Calibration |
-| Deployment Protocol | ⏳ Pending |
-
----
-
-### Demo Environment
-
-**Local Development Instance**
-
+Nebula transforms interconnected pages, maps, portals, keycodes, and discoveries into a living network where users can create, explore, protect, archive, and claim destinations across an expanding digital universe.
 
 
 ---
 
-**Autonomous System Protocol**  
-*MERCWAR Systems © 2026*
 
-*"Chart the Unknown. Archive the Infinite."*
+# ⚡ THE NEBULA EXPANSION
+
+Nebula extends the Stargate and Quasar systems with a new layer of exploration and interaction.
+<a target="_self" title="CLICK HERE TO ENTER THE MERCWAR GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="https://github.com/mercwar/Nebula/blob/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2002_24_03%20PM.png" 
+    alt="Nebula — Expansion for Stargate and Quasar" 
+    style="width:100%; height:auto;"
+/>
+</a>
+It is designed around:
+
+- 🌌 Interactive Nebula maps
+- 🌀 Stargate connections
+- 🔑 Keycode-based access
+- 🚀 Quasar expansion systems
+- 🛰️ Cross-world navigation
+- 📡 Node discovery
+- 💾 Archive protection
+- 🤖 Human, robot, and cyborg interaction
+- 🔭 Spatial exploration
+- 🌐 Mercwar ecosystem integration
+
+Nebula is not simply another webpage.
+
+**It is an expansion layer for the worlds connected through Stargate and Quasar.**
+
+---
+<a target="_self" title="CLICK HERE TO ENTER THE MERCWAR GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="https://github.com/mercwar/Nebula/blob/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2002_27_44%20PM.png" 
+    alt="Nebula — Quasar Expansion" 
+    style="width:100%; height:auto;"
+/>
+</a>
+# 🌀 STARGATE + NEBULA
+
+Nebula expands the Stargate system by turning connected destinations into navigable worlds.
+
+Each destination can become part of a larger network of:
+
+```text
+STARGATE
+   │
+   ├── NEBULA
+   │     │
+   │     ├── WORLDS
+   │     ├── MAPS
+   │     ├── NODES
+   │     ├── FIREGEMS
+   │     └── KEYCODES
+   │
+   └── QUASAR
