@@ -1,53 +1,36 @@
-# /* AVIS_COORD: AVIS://GITHUB/WORKFLOW/XML_GEN/1.0 */
-# /* ROLE: Automated XML Sentinel Dispatch */
-# /* path: .github/workflows/fire-site.yml */
+#!/bin/bash
+# IDENTITY: VERSION 3.8 // FIRE-SITE // CVBGOD
+# ROLE: Dynamic Sitemap Generation with URL Encoding for Version 1 Spaces.
 
-name: "JOE-TRON :: XML-SITEMAP-DISPATCH"
+# 1. Get the base GitHub URL from your git config
+REPO_URL=$(git config --get remote.origin.url | sed 's/\.git$//' | sed 's/git@github.com:/https:\/\/github.com\//')
+BRANCH="main"
+BASE_URL="${REPO_URL}/blob/${BRANCH}"
 
-on:
-  workflow_dispatch:
+OUTPUT_FILE="sitemap.xml"
 
-permissions:
-  contents: write
+echo "Generating sitemap for: ${BASE_URL}"
 
-jobs:
-  map_repository:
-    name: "JOE-TRON :: Recursive XML Mapping"
-    runs-on: ubuntu-latest
-    if: github.actor != 'github-actions[bot]'
+# 2. Start the XML structure
+echo '<?xml version="1.0" encoding="UTF-8"?>' > $OUTPUT_FILE
+echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> $OUTPUT_FILE
 
-    steps:
-      - name: "SENTINEL :: Checkout Authority"
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+# 3. Find all files (including dots)
+# -type f: only files | -not -path '*/.git/*': skip git database
+find . -type f -not -path '*/.git/*' | while read -r file; do
+    # Remove the leading './'
+    CLEAN_PATH="${file#./}"
+    
+    # URL encode spaces (important for 'Version 1' folders)
+    ENCODED_PATH=$(echo "$CLEAN_PATH" | sed 's/ /%20/g')
+    
+    # Write the URL entry
+    echo "  <url>" >> $OUTPUT_FILE
+    echo "    <loc>${BASE_URL}/${ENCODED_PATH}</loc>" >> $OUTPUT_FILE
+    echo "  </url>" >> $OUTPUT_FILE
+done
 
-      - name: "SENTINEL :: Execute fire-site.sh"
-        run: |
-          chmod +x ./fire-site.sh
-          ./fire-site.sh
+# 4. Close the tag
+echo '</urlset>' >> $OUTPUT_FILE
 
-      - name: "SENTINEL :: Commit XML Artifact"
-        run: |
-          git config --global user.name "Sentinel-Bot"
-          git config --global user.email "bot@cvbgod.sentinel"
-          
-          # Stage the map
-          git add sitemap.xml
-          
-          # Check for changes
-          if ! git diff --staged --quiet; then
-            git commit -m "sitemap.xml updated [recursive map] [skip ci]"
-            
-            # Clean workspace for rebase
-            git stash --include-untracked || true
-            
-            # Synchronize with main
-            git pull --rebase origin main
-            
-            # Final Dispatch
-            git push origin main
-            echo "wm_macro_ack: XML dispatched to Audit Surface."
-          else
-            echo "AVIS: No structural shifts detected. Pulse steady."
-          fi
+echo "Done! Full sitemap saved to $OUTPUT_FILE"
