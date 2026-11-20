@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/mercwar/Nebula/blob/main/AVIS-DATALAKE.md</loc>
-  </url>
-  <url>
     <loc>https://github.com/mercwar/Nebula/blob/main/ChatGPT%20Image%20Sep%2029,%202026,%2002_27_44%20PM.png</loc>
   </url>
   <url>
@@ -14,6 +11,9 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/Nebula/blob/main/sitemap.xml</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Nebula/blob/main/.gitmodules</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Nebula/blob/main/README.md</loc>
